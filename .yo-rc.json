@@ -1,0 +1,33 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.stcreative"
+    },
+    "jhipsterVersion": "6.0.1",
+    "applicationType": "monolith",
+    "baseName": "blogapp",
+    "packageName": "com.stcreative",
+    "packageFolder": "com/stcreative",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "OTEwZWQyZGUxNTZkZDg5NDFmMjcwNGQxNDIxY2IyMzNlZDEyYTJhODQwMGZkNzJlMTdhZjc3YjVjOTBjZGJkZWZhMDQ1MjhkZmRiZTQxYzJjZmNlOWEwODZhOTY3ZjczOGYyYTg5OWQyOWRjNDNmN2IzMGFiYmVjN2RjNWNjOTY=",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "skipClient": true
+  }
+}
