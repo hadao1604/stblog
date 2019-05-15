@@ -1,0 +1,38 @@
+entity Post {
+    title String maxlength(1000),
+    postSlug String maxlength(1000),
+    postContent String,
+    postLike Long,
+    postStatus String maxlength(100)
+}
+
+entity Comment {
+    title String maxlength(1000),
+    commentContent String maxlength(2000),
+    commentBy String maxlength(500),
+    commentStatus String maxlength(500),
+    isActive Boolean
+}
+
+entity Media {
+    mediaName String maxlength(200),
+    mediaType String maxlength(50),
+    mediaURL String maxlength(300),
+    mediaAlt String maxlength(300),
+    mediaCaption String maxlength(500),
+}
+
+entity Tag {
+    tagName String maxlength(300),
+	tagSlug String maxlength(300),
+    tagDescription String maxlength(500)
+}
+
+relationship ManyToMany {
+	Post{tag} to Tag{post}
+}
+relationship OneToMany {
+	Post{comment} to Comment{post}
+}
+
+paginate Post with pagination
